@@ -1,4 +1,0 @@
-def solution(n):
-    lst = [int(i) for i in str(n)]
-    lst.reverse()
-    return lst
