@@ -1,0 +1,2 @@
+def solution(absolutes, signs):
+    return sum([g if sign else -g for g, sign in zip(absolutes, signs)])
