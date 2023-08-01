@@ -1,0 +1,4 @@
+def solution(arr, divisor):
+    arr.sort()
+    ans = [s for s in arr if s%divisor == 0]
+    return ans if len(ans)>0 else [-1]
