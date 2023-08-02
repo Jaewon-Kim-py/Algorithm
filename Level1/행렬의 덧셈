@@ -1,0 +1,8 @@
+def solution(arr1, arr2):
+    lst = []
+    for x,y in zip(arr1,arr2):
+        temp_lst = []
+        for i in range(len(x)):
+            temp_lst.append(x[i]+y[i])
+        lst.append(temp_lst)
+    return lst
