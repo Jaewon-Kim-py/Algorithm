@@ -1,0 +1,12 @@
+def solution(s):
+    
+    up = []
+    lo = []
+    for st in s:
+        if st.isupper():
+            up.append(st)
+        else:
+            lo.append(st)
+    up.sort(reverse = True)
+    lo.sort(reverse = True)
+    return ''.join(lo + up)
