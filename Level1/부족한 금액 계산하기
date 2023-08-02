@@ -1,0 +1,3 @@
+def solution(price, money, count):
+    tot = sum([(p+1)*price for p in range(count)])
+    return (tot-money) if (tot-money)>0 else 0
