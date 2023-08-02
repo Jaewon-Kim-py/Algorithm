@@ -1,0 +1,2 @@
+def solution(s):
+    return (s.isdigit()) & (len(s) == 4 or len(s) == 6) 
