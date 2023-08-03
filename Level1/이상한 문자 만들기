@@ -1,0 +1,5 @@
+def solution(s):
+    lst = []
+    for word in s.split(' '):
+        lst.append(''.join([c.upper() if i % 2 == 0 else c.lower() for i, c in enumerate(word)]))
+    return ' '.join(lst)
