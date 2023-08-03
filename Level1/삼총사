@@ -1,0 +1,4 @@
+from itertools import combinations
+def solution(number):
+    lst = list(combinations(number,3))
+    return len([i for i,v in enumerate(lst) if sum(v) == 0])
