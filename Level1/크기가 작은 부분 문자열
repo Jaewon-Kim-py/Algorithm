@@ -1,0 +1,6 @@
+def solution(t, p):
+    tmp = []
+    for i in range(int((len(t) - len(p) + 1))):
+        tmp.append(t[i:i+len(p)])
+        
+    return len([n for n in tmp if int(n)<=int(p)])
