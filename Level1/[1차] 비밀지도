@@ -1,0 +1,33 @@
+def digit(nums,n):
+    ans = ''
+    while nums>0:
+        nums,r = divmod(nums,n)
+        ans += str(r)
+    return ans[::-1]
+
+def solution(n, arr1, arr2):
+    
+    ar1 = []
+    for i in arr1:
+        ar1.append(digit(i,2))
+    
+    ar1 = [i.rjust(n,'0') for i in ar1]
+    
+    ar2 = []
+    for i in arr2:
+        ar2.append(digit(i,2))
+        
+    ar2 = [i.rjust(n,'0') for i in ar2]
+    
+    answer = []
+    for i in range(n):
+        tmp = []
+        for j in range(n):
+            if ar1[i][j] == '1' or ar2[i][j] == '1':
+                tmp.append('#')
+            else:
+                tmp.append(' ')
+        answer.append(''.join(tmp))
+    
+    return answer
+                
