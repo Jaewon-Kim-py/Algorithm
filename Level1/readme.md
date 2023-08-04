@@ -9,4 +9,11 @@ def solution(nums,n):
     return answer[::-1]
 ```
 # n진수 => 10진수
+```
 int('n진수 값',n)
+```
+
+# rjust, ljust
+```
+'문자열'.rjust(n,'#')
+``` 
