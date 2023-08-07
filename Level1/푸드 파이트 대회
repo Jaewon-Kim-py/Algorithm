@@ -1,0 +1,6 @@
+def solution(food):
+    tmp = ''.join([str(i+1)*int(j/2) for i,j in enumerate(food[1:])]) #
+    reverse = tmp[::-1]
+    answer = tmp + '0' + reverse
+    
+    return answer
