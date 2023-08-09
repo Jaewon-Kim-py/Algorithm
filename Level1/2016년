@@ -1,0 +1,6 @@
+def solution(a, b):
+    days_lst = [31,29,31,30,31,30,31,31,30,31,30,31]
+    d = ['FRI','SAT','SUN','MON','TUE','WED','THU']
+    days = sum(days_lst[:(a-1)]) + (b-1)
+    date = (days)%7 
+    return d[date]
