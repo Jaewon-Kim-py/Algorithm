@@ -1,0 +1,7 @@
+def solution(k, m, score):
+    score.sort(reverse = True)
+    
+    price = []
+    for i in range(int(len(score)//m)):
+        price.append(min(score[m*i:m*(i+1)])*m)
+    return sum(price)
