@@ -1,0 +1,6 @@
+def solution(s):
+    tmp = s.split(' ')
+    tmp = [t.lower() for t in tmp]
+    tmp = [t.capitalize() for t in tmp]
+    
+    return ' '.join(tmp)
